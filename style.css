@@ -2,20 +2,22 @@
     display: grid;
     justify-content: center;
     align-content: center;
-    min-height: 100vh;
-    grid-template-columns: auto auto auto auto;
+    min-height: 50vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: 200px;
 
 }
 
 button {
     background-color: rgb(37, 173, 126);
-    padding: 25px;
+    padding: 10px;
 }
 
-#equal {
-    grid-column-start: 3;
-    grid-column-end: 5;
+.span-two {
+    grid-column: span 2;
 }
+
 
 
 button:hover {
